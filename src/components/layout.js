@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Menu from "./menu"
-import Profile from "./profile"
 import PageHeader from "./page-header"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
@@ -31,7 +30,7 @@ const Layout = props => {
     <>
       <Helmet>
         <title>
-          {props.pageTitle} - {data.site.siteMetadata.name || ""}
+          {props.pageTitle}
         </title>
         <meta name="description" content={props.pageDescription || ""} />
       </Helmet>
@@ -47,16 +46,8 @@ const Layout = props => {
 
         <div className="container" id="page-content">
           <div className="row">
-            <div className="column" id="profile-wrapper">
-              <Profile
-                name={data.site.siteMetadata.name}
-                role={data.site.siteMetadata.role}
-                socialMedia={data.site.siteMetadata.socialMedia}
-                email={data.site.siteMetadata.email}
-              />
-            </div>
             <div className="column" id="content-wrapper">
-              <PageHeader title={props.pageTitle} />
+              {/* <PageHeader title={props.pageTitle} /> */}
               {props.children}
             </div>
           </div>
@@ -66,7 +57,7 @@ const Layout = props => {
           <div className="container">
             <div className="row">
               <div className="column">
-                <Footer name={data.site.siteMetadata.name} />
+                <Footer name="Gareth Morgan" />
               </div>
             </div>
           </div>
