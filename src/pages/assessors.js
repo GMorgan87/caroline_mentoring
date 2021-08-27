@@ -11,7 +11,7 @@ export default props => {
         As well as offering professional knowledge, our staff have undertaken extensive post-graduate training and engage in ongoing relevant Continuing Professional Development (CPD).  
       </div>
       <div>
-        <div #dsarates >Current DSA NMHP rates:</div>
+        <div id="dsaRates">Current DSA NMHP rates:</div>
         <table>
           <thead>
             <tr>

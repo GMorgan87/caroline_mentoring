@@ -4,7 +4,6 @@ import { Carousel } from 'react-responsive-carousel';
 
 const Footer = props => {
 
-
   const testimonials = [
     "My experience with my Mentor was extremely positive - each session was beneficial to my University career and mental health", 
     "I really can't stress enough how helpful my Mentor has been during my final year of University",
