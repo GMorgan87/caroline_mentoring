@@ -20,12 +20,12 @@ const Footer = props => {
     <div id="footer">
       <div className="row">
         <Carousel
-          autoPlay="true"
-          interval="3000"
-          infiniteLoop="true"
-          showArrows="false"
-          showIndicators="false"
-          showStatus="false"
+          autoPlay
+          interval={3000}
+          infiniteLoop
+          showArrows={false}
+          showIndicators={false}
+          showStatus={false}
         >
           {testimonialSlides}
         </Carousel>
@@ -33,16 +33,6 @@ const Footer = props => {
       <div className="row">
         <div className="column">
           <p id="cp">&copy; {props.name}</p>
-          <p id="by-gatsby">
-            Proudly made with{" "}
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://gatsbyjs.com"
-            >
-              Gatsby
-            </a>
-          </p>
         </div>
       </div>
     </div>

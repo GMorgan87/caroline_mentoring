@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 export default props => {
 
   return (
-    <Layout pageTitle="Home" pageDescription="Learn more about us">
-      <div>
+    <Layout pageTitle="Clear Mind Mentoring" pageDescription="Learn more about us">
+      <div class="header">
         Clear Mind Mentoring
       </div>
     </Layout>
