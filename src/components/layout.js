@@ -55,9 +55,12 @@ const Layout = props => {
           <div className="container">
             <div className="row">
               <div className="column">
-                <Footer name="Gareth Morgan" />
+                <Footer/>
               </div>
             </div>
+          </div>
+          <div className="row copyright">
+            <p id="cp">&copy; G Morgan</p>
           </div>
         </footer>
       </div>

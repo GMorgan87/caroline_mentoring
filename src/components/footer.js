@@ -18,26 +18,17 @@ const Footer = props => {
 
   return (
     <div id="footer">
-      <div className="row">
-        <div className="column">
-          <Carousel
-            autoPlay
-            interval={5000}
-            infiniteLoop
-            showArrows={false}
-            showIndicators={false}
-            showStatus={false}
-            showThumbs={false}
-          >
-            {testimonialSlides}
-          </Carousel>
-        </div>
-      </div>
-      <div className="row copyright">
-        <div className="column">
-          <p id="cp">&copy; {props.name}</p>
-        </div>
-      </div>
+      <Carousel
+        autoPlay
+        interval={5000}
+        infiniteLoop
+        showArrows={false}
+        showIndicators={false}
+        showStatus={false}
+        showThumbs={false}
+      >
+        {testimonialSlides}
+      </Carousel>
     </div>
   )
 }
