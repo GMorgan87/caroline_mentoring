@@ -91,17 +91,20 @@
   }
 }
 #page-content {
-  padding-top: 95px;
+  padding-top: 195px;
 }
 #content-wrapper {
   border-left: 1px solid #f8f8f8;
   padding-left: 2rem;
 }
 footer {
-  margin-top: 80px;
+  position: absolute;
+  bottom: 0;
+  // margin-top: 80px;
+  width: 100%;
+  height: 100px;
   padding-top: 25px;
   font-size: 0.7em;
-  border-top: 1px solid #f8f8f8;
   color: #888;
 }
 footer p {
@@ -339,4 +342,43 @@ a:focus,
 .font-programmer {
   font-family: "IBM Plex Mono";
   font-size: 0.9em;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  padding-top: 15px;
+  background-image: url("../../public/background_temp.png"); 
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 1rem
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin: 50px 10px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: -45px;
+}
+
+.testimonial {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 640px) {
+  .header-image {
+    display: none;
+  }
 }

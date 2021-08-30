@@ -25,6 +25,10 @@ const Menu = props => {
 
   return (
     <header className="site-header">
+      <div className="header-image">
+        <h3 className="title">Clear Mind Mentoring</h3>
+        <p>Student-Centered NMHP Support</p>
+      </div>
       <div className="container">
         <div className="row">
           <div className="column xs-visible" id="menu-name">

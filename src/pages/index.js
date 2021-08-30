@@ -6,8 +6,13 @@ export default props => {
 
   return (
     <Layout pageTitle="Clear Mind Mentoring" pageDescription="Learn more about us">
-      <div class="header">
-        Clear Mind Mentoring
+      <div className="buttons">
+        <a href="/students">
+          <div className="button link">Students</div>
+        </a>
+        <a href="/assessors">
+          <div className="button link">DSA Rates</div>
+        </a>
       </div>
     </Layout>
   )

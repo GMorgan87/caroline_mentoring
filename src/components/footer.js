@@ -12,25 +12,28 @@ const Footer = props => {
     "My Mentor often knows exactly the right advice at the right time….  without doubt, I would highly recommend mentoring support"
   ]
 
-  const testimonialSlides = testimonials.map(testimonial => {
-    return <p>{testimonial}</p>
+  const testimonialSlides = testimonials.map((testimonial, index) => {
+    return <p key={index} className="testimonial">{testimonial}</p>
   })
 
   return (
     <div id="footer">
       <div className="row">
-        <Carousel
-          autoPlay
-          interval={3000}
-          infiniteLoop
-          showArrows={false}
-          showIndicators={false}
-          showStatus={false}
-        >
-          {testimonialSlides}
-        </Carousel>
+        <div className="column">
+          <Carousel
+            autoPlay
+            interval={5000}
+            infiniteLoop
+            showArrows={false}
+            showIndicators={false}
+            showStatus={false}
+            showThumbs={false}
+          >
+            {testimonialSlides}
+          </Carousel>
+        </div>
       </div>
-      <div className="row">
+      <div className="row copyright">
         <div className="column">
           <p id="cp">&copy; {props.name}</p>
         </div>
